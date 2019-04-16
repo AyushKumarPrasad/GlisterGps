@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@mipmap/backgroundpage"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Meeting">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/meetingShowTime"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/editbackground"
+                android:fontFamily="@font/open_sans_light"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:text="Time display here"
+                android:textColor="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/meetingName"
+                android:hint="Retailer Name"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/editbackground"
+                android:fontFamily="@font/open_sans_light"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:textColorHint="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/meetingDate"
+                android:focusable="false"
+                android:inputType="date"
+                android:hint="yyyy-mm-dd"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/editbackground"
+                android:fontFamily="@font/open_sans_light"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:textColorHint="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/meetingStartTime"
+                android:hint="Start Time"
+                android:focusable="false"
+                android:inputType="time"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/editbackground"
+                android:fontFamily="@font/open_sans_light"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:textColorHint="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/meetingMobile"
+                android:inputType="number"
+                android:maxLength="10"
+                android:hint="Mobile"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/editbackground"
+                android:fontFamily="@font/open_sans_light"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:textColorHint="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/meetingOrder"
+                android:inputType="textPersonName"
+                android:hint="Type Order"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/editbackground"
+                android:fontFamily="@font/open_sans_light"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:textColorHint="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/meetingAddress"
+                android:visibility="invisible"
+                android:hint="Address"
+                android:focusable="false"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/editbackground"
+                android:fontFamily="@font/open_sans_light"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:textColorHint="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="20dp" />
+
+            <ImageView
+                android:id="@+id/meetingImageview"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/meetingEndTime"
+                android:hint="End Time"
+                android:visibility="invisible"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/editbackground"
+                android:fontFamily="@font/open_sans_light"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:textColorHint="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:id="@+id/uploadBtnMeetingDetails"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="50dp"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/open_sans_light"
+                android:background="@mipmap/loginbutton"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Click"  />
+
+            <TextView
+                android:id="@+id/text_address"
+                android:visibility="invisible"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_address_geolocation"
+                android:visibility="invisible"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="address"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@mipmap/backgroundpage"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductItems">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </RelativeLayout>
+
+        <GridLayout
+
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:padding="10dp"
+            android:rowCount="3">
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+            <android.support.v7.widget.CardView
+
+                android:clickable="true"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:focusable="true"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:id="@+id/card1"
+                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/one"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <TextView
+                    android:text="Topaz Lamp"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Column 2 -->
+            <android.support.v7.widget.CardView
+                android:clickable="true"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:focusable="true"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:id="@+id/card2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/two"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Pearl Slim Panel"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:layout_marginTop="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+            <android.support.v7.widget.CardView
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/three"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Regular Led Street Light"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_marginTop="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Column 2 -->
+            <android.support.v7.widget.CardView
+                android:clickable="true"
+                android:layout_width="0dp"
+
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:id="@+id/card4"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/four"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Solar Street Light"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:layout_marginTop="80dp"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+            <android.support.v7.widget.CardView
+                android:clickable="true"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:background="@drawable/five"
+                    android:id="@+id/card5"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Regular Led Flood Light"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:layout_marginTop="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Column 2 -->
+            <android.support.v7.widget.CardView
+                android:clickable="true"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:id="@+id/card6"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/six"
+                    android:layout_height="80dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <TextView
+                    android:text="Led T5"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:layout_marginTop="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Column 1 -->
+            <android.support.v7.widget.CardView
+                android:clickable="true"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:background="@drawable/seven"
+                    android:id="@+id/card7"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Premium Fan"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:layout_marginTop="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Column 2 -->
+            <android.support.v7.widget.CardView
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:id="@+id/card8"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/eight"
+                    android:layout_height="80dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Twp Fan"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:layout_marginTop="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+
+</LinearLayout>

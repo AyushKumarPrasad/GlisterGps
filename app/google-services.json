@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "408645242616",
+    "firebase_url": "https://glister-sales.firebaseio.com",
+    "project_id": "glister-sales",
+    "storage_bucket": "glister-sales.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408645242616:android:1e760df76cf1a104",
+        "android_client_info": {
+          "package_name": "limited.pvt.global.stachi.glisteruser.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408645242616-dmucf67qiedpaig4mbgqu02pfn0tqced.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "limited.pvt.global.stachi.glisteruser.app",
+            "certificate_hash": "e3996d2cc306434a766174afbe05264fed9fc888"
+          }
+        },
+        {
+          "client_id": "408645242616-gf4co026tgqmpb3rs9ij4t5fcoml1rgh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxytOYI8zGEYodnILndxsL5QE4F6wYUdk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408645242616-gf4co026tgqmpb3rs9ij4t5fcoml1rgh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+android:background="@mipmap/backgroundpage"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@mipmap/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+</LinearLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnSignUp"
+        android:text="SignUp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_margin="8dp"
+        android:layout_height="match_parent"
+        app:fButtonColor="@android:color/white"
+        app:shadowColor="@android:color/black"
+        app:shadowEnabled="true"
+        app:shadowHeight="6dp"
+        app:cornerRadius="10dp" />
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnSignIn"
+        android:text="SignIn"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_margin="8dp"
+        android:layout_height="match_parent"
+        app:fButtonColor="@android:color/white"
+        app:shadowColor="@android:color/black"
+        app:shadowEnabled="true"
+        app:shadowHeight="6dp"
+        app:cornerRadius="10dp" />
+</LinearLayout>
+</RelativeLayout>

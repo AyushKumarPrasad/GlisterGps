@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadImage">
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="Capture and Upload" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/upload"
+        android:layout_width="400dp"
+        android:layout_height="350dp" />
+
+    <Button
+        android:id="@+id/upload1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:text="Capture and Upload"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+</RelativeLayout>

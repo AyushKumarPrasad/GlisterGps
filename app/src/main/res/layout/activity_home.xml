@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/backgroundpage"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/butGps"
+                android:text="Chat"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/open_sans_light"
+                android:background="@mipmap/editbackground"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                />
+
+            <Button
+                android:id="@+id/secondMap"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/open_sans_light"
+                android:background="@mipmap/loginbutton"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Mark Attendance" />
+
+            <Button
+                android:id="@+id/button2"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/open_sans_light"
+                android:background="@mipmap/loginbutton"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="History" />
+
+            <Button
+                android:id="@+id/meetingDetailsHome"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/open_sans_light"
+                android:background="@mipmap/loginbutton"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Meeting Details" />
+
+            <Button
+                android:id="@+id/productListItem"
+                android:visibility="invisible"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/open_sans_light"
+                android:background="@mipmap/loginbutton"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Product Items" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:layout_gravity="center"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/progressbar_states"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/tv_percentage"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:textSize="8dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:textSize="8dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

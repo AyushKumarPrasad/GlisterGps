@@ -1,0 +1,1421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:background="@mipmap/backgroundpage"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:card_view="http://schemas.android.com/tools"
+tools:context=".Product1">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@mipmap/editbackground"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/productName"
+                android:fontFamily="@font/open_sans_light"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"  />
+
+            <TextView
+                android:id="@+id/mRP"
+                android:fontFamily="@font/open_sans_light"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M.R.P."
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"/>
+
+            <TextView
+                android:id="@+id/salesPrice"
+                android:fontFamily="@font/open_sans_light"
+                android:layout_marginLeft="15dp"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sales P."
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"/>
+
+            <TextView
+                android:id="@+id/quantity"
+                android:fontFamily="@font/open_sans_light"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/pay"
+                android:fontFamily="@font/open_sans_light"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p1_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="0.5W LED LAMP"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p1_mrp"
+                android:text="85"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p1_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:minLines="1"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p1_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p1_pay"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p2_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="0.5W LED \n CANDLE  LAMP"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p2_mrp"
+
+                android:text="85"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"  />
+
+            <EditText
+                android:id="@+id/p2_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="4"
+                android:layout_height="40dp"
+                android:hint="0"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p2_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p2_pay"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p3_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="3W LED LAMP"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p3_mrp"
+
+                android:text="145"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"  />
+
+            <EditText
+                android:id="@+id/p3_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textAlignment="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p3_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p3_pay"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p4_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="5W LED LAMP"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p4_mrp"
+
+                android:text="165"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"  />
+
+            <EditText
+                android:id="@+id/p4_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p4_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p4_pay"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p5_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="7W LED LAMP"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p5_mrp"
+
+                android:text="185"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"  />
+
+            <EditText
+                android:id="@+id/p5_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p5_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p5_pay"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p6_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="9W LED LAMP"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p6_mrp"
+
+                android:text="225"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"  />
+
+            <EditText
+                android:id="@+id/p6_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p6_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p6_pay"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p7_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="12W LED LAMP"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"  />
+
+            <TextView
+                android:id="@+id/p7_mrp"
+
+                android:text="325"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"  />
+
+            <EditText
+                android:id="@+id/p7_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p7_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p7_pay"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p8_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="15W LED LAMP"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p8_mrp"
+
+                android:text="425"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"  />
+
+            <EditText
+                android:id="@+id/p8_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p8_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p8_pay"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p9_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="20W LED LAMP"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p9_mrp"
+
+                android:text="625"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"  />
+
+            <EditText
+                android:id="@+id/p9_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p9_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p9_pay"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p10_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="26W LED LAMP"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p10_mrp"
+
+                android:text="999"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"   />
+
+            <EditText
+                android:id="@+id/p10_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p10_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p10_pay"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p11_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="36W LED LAMP"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p11_mrp"
+
+                android:text="1399"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"   />
+
+            <EditText
+                android:id="@+id/p11_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p11_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p11_pay"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p12_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="45W LED LAMP"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p12_mrp"
+
+                android:text="1599"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p12_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textAlignment="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p12_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p12_pay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p13_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="9W LED LAMP"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p13_mrp"
+
+                android:text="899"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"  />
+
+            <EditText
+                android:id="@+id/p13_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p13_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p13_pay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/p14_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="45W T BULB"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p14_mrp"
+
+                android:text="525"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"  />
+
+            <EditText
+                android:id="@+id/p14_salesPrice"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p14_quantity"
+                android:background="@mipmap/editbackground"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/p14_pay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,LabelFor,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/p1_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/p2_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/p3_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/p4_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/p5_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/p6_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/p7_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/p8_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/p9_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/p10_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/p11_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/p12_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/p13_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/p14_finalResult"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/totalPrice"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="Total"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/totalPriceAmount"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/paymentReceived"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="Amount Received"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <EditText
+                    android:id="@+id/paymentReceivedAmount"
+                    android:background="@mipmap/editbackground"
+                    android:layout_marginLeft="20dp"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/outStanding"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="Outstanding"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/outStandingAmount"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/submit"
+                    android:text="Done"
+                    android:layout_marginBottom="10dp"
+                    android:background="@mipmap/loginbutton"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/submitDatabase"
+                    android:text="Submit"
+                    android:background="@mipmap/loginbutton"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/text_address"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_address_geolocation"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="address"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>
